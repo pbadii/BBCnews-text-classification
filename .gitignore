@@ -1,20 +1,86 @@
+# -----------------------------
 # Python
+# -----------------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.ipynb_checkpoints
+*.pdb
 *.egg-info/
+*.egg
+*.log
 
+# -----------------------------
+# Jupyter Notebook
+# -----------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# -----------------------------
 # Data
+# -----------------------------
+# Ignore raw data and large files
 data/raw/
 *.csv
+*.tsv
+*.xls
 *.xlsx
+*.parquet
+*.feather
+*.hdf5
+*.db
+*.sqlite
 *.zip
+*.tar.gz
 
-# Jupyter
-.ipynb_checkpoints/
+# Allow small sample datasets
+!data/sample_*.csv
 
-# System files
+# -----------------------------
+# Environment & Package Mgmt
+# -----------------------------
+.venv/
+env/
+venv/
+ENV/
+Pipfile.lock
+poetry.lock
+requirements-dev.txt
+
+# -----------------------------
+# System Files
+# -----------------------------
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# -----------------------------
+# VSCode / IDE
+# -----------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------
+# Reports & Outputs
+# -----------------------------
+reports/*.html
+reports/*.pdf
+reports/*.docx
+
+# -----------------------------
+# Models
+# -----------------------------
+models/
+*.pkl
+*.joblib
+*.h5
+*.onnx
+
+# -----------------------------
+# Other
+# -----------------------------
+*.bak
+*.swp
+*.tmp
